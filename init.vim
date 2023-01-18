@@ -13,7 +13,7 @@ function! s:JbzCppMan()
     set iskeyword+=:    
     let str = expand("<cword>")    
     let &l:iskeyword = old_isk    
-    execute 'cppman ' . str    
+    execute 'Man ' . str    
 endfunction    
 command! JbzCppMan :call s:JbzCppMan()    
     
